@@ -1,0 +1,136 @@
+@import 'normalize.css';
+
+* {
+    margin: 0;
+}
+
+.container {
+    background-color: hsl(240, 90%, 4%);
+    padding : 21px 166px 21px 166px;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    gap: 100px;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.nav-list{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+}
+
+.nav-list li {
+    color: #FFFFFF;
+    font-size : 16px;
+    font-weight: 600;
+}
+
+.treat {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    
+}
+
+.phone-number {
+    width: 150px;
+    color: #FFFFFF;
+    font-family: Poppins;
+    font-size : 16px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    gap: 5px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.welcome-container {
+    display: flex;
+    justify-content: space-between;
+    padding : 21px 166px 21px 166px;
+    align-items: center;
+    border: 1px solid #EDEDED;
+}
+
+#welcome-text {
+    color: #212529;
+    font-family: Poppins;
+    font-size : 20px;
+    font-weight: 400;
+}
+
+.search-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#search-input {
+    border: 1px solid #CED4DA;
+    width: 252px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    box-sizing: border-box;
+    padding: 15px 40px;
+}
+
+#search-input::placeholder {
+    color: #B1B1B1;
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+#search-icon {
+    position: absolute;
+    top: 25%;
+    left: 5px;
+}
+
+.appointment {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.appointment-container {
+    width: 1200px;
+    height: 584px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.appointment-title h2 {
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 36px;
+    color: #010114;
+}
+
+.appointment-form-container {
+    
+}

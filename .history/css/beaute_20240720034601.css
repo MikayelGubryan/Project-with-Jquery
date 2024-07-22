@@ -1,0 +1,77 @@
+@import 'normalize.css';
+
+* {
+    margin: 0;
+}
+
+.container {
+    background-color: hsl(240, 90%, 4%);
+    padding : 21px 166px 21px 166px;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    gap: 100px;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.nav-list{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+}
+
+.nav-list li {
+    color: #FFFFFF;
+    font-size : 16px;
+    font-weight: 600;
+}
+
+.treat {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    
+}
+
+.phone-number {
+    width: 150px    ;
+    color: #FFFFFF;
+    font-family: Poppins;
+    font-size : 16px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;    
+    justify-content;
+    gap: 5px;
+}
+
+main {
+    display: flex;
+    gap: 100px;
+}
+
+#welcome-text {
+    color: #212529;
+    font-family: Poppins;
+    font-size : 20px;
+    font-weight: 400;
+}
+
+#search-input {
+    border: 1px;
+    width: 300px;
+    height: 40px;
+}

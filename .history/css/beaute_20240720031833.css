@@ -1,0 +1,55 @@
+@import 'normalize.css';
+
+* {
+    margin: 0;
+}
+
+header {
+    background-color: hsl(240, 90%, 4%);
+    padding : 21px 166px 21px 166px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.nav-list{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+}
+
+.nav-list li {
+    color: #FFFFFF;
+    font-size : 16px;
+    font-weight: 600;
+}
+
+.treat {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.phone-number {
+    color: #FFFFFF;
+    font-family: Poppins;
+    font-size : 16px;
+    font-weight: 600;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;    
+    gap: 5px;
+}

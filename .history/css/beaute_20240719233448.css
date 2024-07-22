@@ -1,0 +1,10 @@
+@import 'normalize.css';
+
+header {
+    height: 92px;
+    background-color: hsl(240, 90%, 4%);
+    padding : 21px 166px 21px 166px;
+    display: flex;
+    gap: 10px;
+    margin: 0 auto;
+}
