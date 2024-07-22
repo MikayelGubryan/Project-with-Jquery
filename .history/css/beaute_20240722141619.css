@@ -10,6 +10,11 @@
     margin: 0 auto;
 }
 
+/* .container-2 {  
+    padding : 21px 166px 21px 166px;
+    margin: 0 auto;
+} */
+
 .header-main {
     display: flex;
     /* gap: 100px; */
@@ -149,6 +154,7 @@ main {
     gap: 50px;
     padding: 0 10px 2px;
     position: relative;
+    /* flex-direction: column; */
 }
 
 .form-list {
@@ -170,6 +176,8 @@ main {
     top: 100%;
     background-color: #F1F1F1;
     padding: 10px;
+    /* position: absolute;
+    right: 42%; */
 
     flex-direction: column;
     padding: 32px 4px 32px 4px;
@@ -211,18 +219,25 @@ main {
     right: 20px;
 }
 
+
+
+
+
 .nav-media {
     display: none; 
 }
 
 .nav-links.active {
-    display: block; 
+    display: block; /* Show nav links when active class is added */
 }
 
 @media only screen and (max-width: 1100px) {
     .container {
         height: 47px;
         padding: 20px;
+        /* width: 100%; */
+        /* display: flex;
+        justify-content: space-between; */
     }
 
     .appointment, .welcome-container {
@@ -282,6 +297,11 @@ main {
         display: flex;
         flex-direction: column;
     }
+
+    /* .container {
+        display: flex;
+        justify-content: space-between;
+    } */
 
     .form-list-container {
         gap: 30px;
@@ -347,6 +367,8 @@ main {
     .nav-media {
         display: flex; 
         justify-content: space-between;
+        /* background-color: yellow; */
+        /* gap: 30px; */
     }
 }
 
@@ -359,6 +381,7 @@ main {
     }
 
     .nav-links {
+        /* display: block; */
         position: absolute;
         top: 50px;
         left: 0;
@@ -403,6 +426,19 @@ main {
         flex-grow: 1;
     } 
 
+    /* .nav-links.active {
+        display: block;
+    } */
+
+    /* .nav-list {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav-list li {
+        padding: 15px;
+        border-bottom: 1px solid #444;
+    }   */
 }
 
 .navbar {

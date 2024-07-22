@@ -10,6 +10,11 @@
     margin: 0 auto;
 }
 
+/* .container-2 {  
+    padding : 21px 166px 21px 166px;
+    margin: 0 auto;
+} */
+
 .header-main {
     display: flex;
     /* gap: 100px; */
@@ -149,6 +154,7 @@ main {
     gap: 50px;
     padding: 0 10px 2px;
     position: relative;
+    /* flex-direction: column; */
 }
 
 .form-list {
@@ -210,6 +216,10 @@ main {
     position: absolute;
     right: 20px;
 }
+
+
+
+
 
 .nav-media {
     display: none; 
@@ -347,6 +357,8 @@ main {
     .nav-media {
         display: flex; 
         justify-content: space-between;
+        /* background-color: yellow; */
+        /* gap: 30px; */
     }
 }
 

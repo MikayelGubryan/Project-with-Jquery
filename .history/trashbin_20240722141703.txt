@@ -1,11 +1,3 @@
-/* .container-2 {  
-    padding : 21px 166px 21px 166px;
-    margin: 0 auto;
-} */
- 
-    /* flex-direction: column; */
-
- 
         /* background-color: yellow; */
         /* gap: 30px; */
  

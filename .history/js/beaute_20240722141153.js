@@ -101,13 +101,13 @@ $('.appointment-form-container').on('click', '.submenu-item-2', function(event) 
         $('.submenu-items-1').css('color', 'gray');
 
         $('#submenu-items-2').on('click', function() {
-            $(this).css('color', '#010114');
-            $('#submenu-items-3').css('color', 'gray');
+            $(this).addClass('active').removeClass('inactive');
+            $('#submenu-items-3').addClass('inactive').removeClass('active');
         });
 
         $('#submenu-items-3').on('click', function() {
-            $(this).css('color', '#010114');
-            $('#submenu-items-2').css('color', 'gray');
+            $(this).addClass('active').removeClass('inactive');
+            $('#submenu-items-2').addClass('inactive').removeClass('active');
         });
     }    
 });
