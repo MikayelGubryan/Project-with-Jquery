@@ -1,25 +1,3 @@
-            // Close all popups if the viewport width is 400px or greater
-
- 
-.find('.arrow-icon').remove()
- 
-                // $(this).find('.arrow-icon').remove();
-
- 
-                $(this).find('.arrow-icon').remove(); 
-
- 
-$(this).hasClass('active') ? 
- 
-                $(this).css('color', $(this).hasClass('active') ? '#FFFFFF' : '');
-
- 
-                        <div class="form-list-container-2"> 
-
- 
-                        </div>
-
- 
                         <div class="form-list-container-2"> 
  
     /* display: flex;

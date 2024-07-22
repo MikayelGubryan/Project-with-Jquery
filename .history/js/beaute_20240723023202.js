@@ -30,22 +30,25 @@ $(document).ready(function() {
                 $(this).append($(this).hasClass('active') ? arrowIconUp : arrowIconDown);
                 $(this).find('.submenu-popup').toggle();
 
-                $(this).find('.submenu-items').each(function() {
-                    if (!$(this).find('.arrow-icon').length) {
-                        $(this).append(arrowIconDown);
-                    }
-                });
+                if ($(this).find('.submenu-popup').is(':visible')) {
+                    $(this).find('.submenu-items').each(function() {
+                        if (!$(this).find('.arrow-icon').length) {
+                            $(this).append(arrowIconDown);
+                        }
+                    });
+                }
                 
                 });
 
-                $('.appointment-form-container').off('click', '.submenu-items');
+                // $('.appointment-form-container').off('click', '.submenu-items');
 
             $('.appointment-form-container').on('click', '.submenu-items', function(event) {
                 event.stopPropagation();
 
-                $('.submenu-items').not(this).removeClass('active').css('background-color', '');
+                $('.submenu-items').not(this).removeClass('active').css('background-color', '').find('.arrow-icon').remove();
                 $(this).toggleClass('active');
                 $(this).css('background-color', $(this).hasClass('active') ? 'lightgray' : '');
+                $(this).find('.arrow-icon').remove();
                 $(this).append($(this).hasClass('active') ? arrowIconUp : arrowIconDown);
             });
 
@@ -58,15 +61,8 @@ $(document).ready(function() {
 
     $(window).resize(function() {
         checkWindowSizeAndAddArrows();
-        
-        if (window.matchMedia("(min-width: 400px)").matches) {
-            $('.popup').hide();
-            $('.form-list').removeClass('active').css('background-color', '');
-            $('#form-list-2').find('.arrow-icon').remove();
-            $('.submenu-popup').hide();
-        }
     });
-    
+
     $('.popup').hide();
 
     

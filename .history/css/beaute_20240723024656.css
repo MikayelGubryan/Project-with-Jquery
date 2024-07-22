@@ -393,7 +393,9 @@ main {
 
     }
 
-    
+    .submenu-items-2 {
+        display: block;
+    }
 
     .submenu-popup {
         display: none;

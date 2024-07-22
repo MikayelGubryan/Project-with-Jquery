@@ -27,28 +27,11 @@ $(document).ready(function() {
                 $('#form-list-2').css('background-color', $(this).hasClass('active') ? '#010114' : '');
                 $('#form-list-2').css('color', $(this).hasClass('active') ? '#FFFFFF' : '');
                 $(this).find('.arrow-icon').remove(); 
-                $(this).append($(this).hasClass('active') ? arrowIconUp : arrowIconDown);
+                $(this)
+                $(this).append($(this).hasClass('active') ? arrowIconUp : arrowIconDown); 
                 $(this).find('.submenu-popup').toggle();
-
-                $(this).find('.submenu-items').each(function() {
-                    if (!$(this).find('.arrow-icon').length) {
-                        $(this).append(arrowIconDown);
-                    }
-                });
                 
                 });
-
-                $('.appointment-form-container').off('click', '.submenu-items');
-
-            $('.appointment-form-container').on('click', '.submenu-items', function(event) {
-                event.stopPropagation();
-
-                $('.submenu-items').not(this).removeClass('active').css('background-color', '');
-                $(this).toggleClass('active');
-                $(this).css('background-color', $(this).hasClass('active') ? 'lightgray' : '');
-                $(this).append($(this).hasClass('active') ? arrowIconUp : arrowIconDown);
-            });
-
         } else {
             $('.arrow-icon').remove();
         }
@@ -58,15 +41,8 @@ $(document).ready(function() {
 
     $(window).resize(function() {
         checkWindowSizeAndAddArrows();
-        
-        if (window.matchMedia("(min-width: 400px)").matches) {
-            $('.popup').hide();
-            $('.form-list').removeClass('active').css('background-color', '');
-            $('#form-list-2').find('.arrow-icon').remove();
-            $('.submenu-popup').hide();
-        }
     });
-    
+
     $('.popup').hide();
 
     
@@ -101,10 +77,6 @@ $(document).ready(function() {
 $('.appointment-form-container').on('click', '.submenu-item-1', function(event) {
     event.stopPropagation();
 
-    if (window.matchMedia("(max-width: 800px)").matches) {
-        return;
-    }
-
     $('.submenu-items').removeClass('active').addClass('inactive');
     
     if($(this).index() === 1){
@@ -119,10 +91,6 @@ $('.appointment-form-container').on('click', '.submenu-item-1', function(event) 
 
 $('.appointment-form-container').on('click', '.submenu-item-2', function(event) {
     event.stopPropagation();
-
-    if (window.matchMedia("(max-width: 800px)").matches) {
-        return;
-    }
 
     if($(this).index() === 4){
         $(this).removeClass('inactive').addClass('active').append(arrowIconRight);

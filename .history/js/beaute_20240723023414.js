@@ -43,9 +43,10 @@ $(document).ready(function() {
             $('.appointment-form-container').on('click', '.submenu-items', function(event) {
                 event.stopPropagation();
 
-                $('.submenu-items').not(this).removeClass('active').css('background-color', '');
+                $('.submenu-items').not(this).removeClass('active').css('background-color', '').find('.arrow-icon').remove();
                 $(this).toggleClass('active');
                 $(this).css('background-color', $(this).hasClass('active') ? 'lightgray' : '');
+                // $(this).find('.arrow-icon').remove();
                 $(this).append($(this).hasClass('active') ? arrowIconUp : arrowIconDown);
             });
 
@@ -58,15 +59,8 @@ $(document).ready(function() {
 
     $(window).resize(function() {
         checkWindowSizeAndAddArrows();
-        
-        if (window.matchMedia("(min-width: 400px)").matches) {
-            $('.popup').hide();
-            $('.form-list').removeClass('active').css('background-color', '');
-            $('#form-list-2').find('.arrow-icon').remove();
-            $('.submenu-popup').hide();
-        }
     });
-    
+
     $('.popup').hide();
 
     

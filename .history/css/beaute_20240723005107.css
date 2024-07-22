@@ -131,25 +131,27 @@ main {
 .appointment-form-container {
     display: flex;
     gap: 30px;
-    flex-direction: row;
-    position: relative;
+    position: relative; 
 }
 
 .appointment-form {
     background-color: #F1F1F1;
-    display: flex;
-    gap: 12px;
-    flex-direction: column;
-    padding: 32px 4px 32px 4px;
+    padding: 32px 4px 0px 4px;
 }
 
 .form-list-container {
     display: flex;
     flex-direction: column;
-    gap: 50px;
-    padding: 0 10px 2px;
+    gap: 70px;
     position: relative;
 }
+
+.form-list-container-2 {
+    display: flex;
+    gap: 64px;
+    padding: 12px;
+}
+
 
 .form-list {
     font-family: Poppins;
@@ -392,8 +394,6 @@ main {
         align-items: center;
 
     }
-
-    
 
     .submenu-popup {
         display: none;

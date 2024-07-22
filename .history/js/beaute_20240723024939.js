@@ -66,7 +66,6 @@ $(document).ready(function() {
             $('.submenu-popup').hide();
         }
     });
-    
     $('.popup').hide();
 
     

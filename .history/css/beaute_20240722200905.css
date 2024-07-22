@@ -326,7 +326,6 @@ main {
 }
 
 @media only screen and (max-width: 800px) {
-
     .welcome-container, .nav-links, .phone-number{
         display: none;
     }
@@ -393,18 +392,9 @@ main {
 
     }
 
-    
-
     .submenu-popup {
-        display: none;
+        height: 300px;
         width: 300px;
-        padding: 35px;
-    }
-
-    .submenu-popup ul {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
     }
 
     .form-list-title {
@@ -418,13 +408,12 @@ main {
     .form-list {
         background-color: red;
         padding: 5px;
-        width: 370px;
         min-height: 50px;
         background-color: #F2F2F3;
         display: flex;
         justify-content: center;
         align-items: center;
-        /* position: relative; */
+        position: relative;
         flex-direction: column;
     }
 

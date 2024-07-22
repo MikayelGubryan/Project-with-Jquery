@@ -60,13 +60,13 @@ $(document).ready(function() {
         checkWindowSizeAndAddArrows();
         
         if (window.matchMedia("(min-width: 400px)").matches) {
+            // Close all popups if the viewport width is 400px or greater
             $('.popup').hide();
             $('.form-list').removeClass('active').css('background-color', '');
             $('#form-list-2').find('.arrow-icon').remove();
             $('.submenu-popup').hide();
         }
     });
-    
     $('.popup').hide();
 
     

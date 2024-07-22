@@ -131,8 +131,8 @@ main {
 .appointment-form-container {
     display: flex;
     gap: 30px;
-    flex-direction: row;
-    position: relative;
+    /* flex-direction: row;
+    position: relative; */
 }
 
 .appointment-form {
@@ -392,8 +392,6 @@ main {
         align-items: center;
 
     }
-
-    
 
     .submenu-popup {
         display: none;

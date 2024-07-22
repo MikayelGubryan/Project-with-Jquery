@@ -58,15 +58,8 @@ $(document).ready(function() {
 
     $(window).resize(function() {
         checkWindowSizeAndAddArrows();
-        
-        if (window.matchMedia("(min-width: 400px)").matches) {
-            $('.popup').hide();
-            $('.form-list').removeClass('active').css('background-color', '');
-            $('#form-list-2').find('.arrow-icon').remove();
-            $('.submenu-popup').hide();
-        }
     });
-    
+
     $('.popup').hide();
 
     
