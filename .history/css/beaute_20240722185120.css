@@ -405,6 +405,8 @@ main {
         align-items: center;
     }
 
+
+
     .form-list {
         background-color: red;
         padding: 5px;
@@ -476,5 +478,6 @@ main {
     .nav-left {
         flex-grow: 1;
     } 
+
 }
 

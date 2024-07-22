@@ -323,7 +323,10 @@ main {
         width: 50%;
     }
 
+
+
 }
+
 
 @media only screen and (max-width: 800px) {
     .welcome-container, .nav-links, .phone-number{
@@ -337,6 +340,7 @@ main {
     .nav-media {
         width: 100%;
     }
+
 
     .nav-links {
         position: absolute;
@@ -404,6 +408,8 @@ main {
         justify-content: center;
         align-items: center;
     }
+
+
 
     .form-list {
         background-color: red;
@@ -476,5 +482,6 @@ main {
     .nav-left {
         flex-grow: 1;
     } 
+
 }
 
