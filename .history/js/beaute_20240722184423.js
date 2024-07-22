@@ -52,10 +52,6 @@ $(document).ready(function() {
     $('.appointment-form-container').on('click', '.form-list', function(event) {
         event.stopPropagation();
 
-        if (window.matchMedia("(max-width: 800px)").matches) {
-            return;
-        }
-
         $('.form-list').removeClass('active').addClass('inactive');
         $('.form-list').find('.arrow-icon').remove();
         $('.submenu-items').removeClass('active').addClass('inactive');

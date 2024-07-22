@@ -2,7 +2,7 @@ $(document).ready(function() {
 
     const arrowIconRight = '<i class="arrow-icon fas fa-chevron-right"></i>';
     const arrowIconDown = '<i class="arrow-icon fas fa-chevron-down"></i>';
-    const arrowIconUp = '<i class="arrow-icon fas fa-chevron-above"></i>';
+    const arrowIconAbove = '<i class="arrow-icon fas fa-chevron-above"></i>';
 
 
     $('.hamburger-menu').click(function() {
@@ -40,21 +40,17 @@ $(document).ready(function() {
     }
 
     checkWindowSizeAndAddArrows();
+    $('.popup').hide();
 
     $(window).resize(function() {
         checkWindowSizeAndAddArrows();
     });
 
-    $('.popup').hide();
 
     
 
     $('.appointment-form-container').on('click', '.form-list', function(event) {
         event.stopPropagation();
-
-        if (window.matchMedia("(max-width: 800px)").matches) {
-            return;
-        }
 
         $('.form-list').removeClass('active').addClass('inactive');
         $('.form-list').find('.arrow-icon').remove();

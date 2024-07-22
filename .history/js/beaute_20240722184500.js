@@ -53,7 +53,7 @@ $(document).ready(function() {
         event.stopPropagation();
 
         if (window.matchMedia("(max-width: 800px)").matches) {
-            return;
+            return; // Prevent popup from opening if screen width is less than 800px
         }
 
         $('.form-list').removeClass('active').addClass('inactive');

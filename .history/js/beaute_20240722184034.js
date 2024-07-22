@@ -2,7 +2,7 @@ $(document).ready(function() {
 
     const arrowIconRight = '<i class="arrow-icon fas fa-chevron-right"></i>';
     const arrowIconDown = '<i class="arrow-icon fas fa-chevron-down"></i>';
-    const arrowIconUp = '<i class="arrow-icon fas fa-chevron-above"></i>';
+    const arrowIconAbove = '<i class="arrow-icon fas fa-chevron-above"></i>';
 
 
     $('.hamburger-menu').click(function() {
@@ -51,10 +51,6 @@ $(document).ready(function() {
 
     $('.appointment-form-container').on('click', '.form-list', function(event) {
         event.stopPropagation();
-
-        if (window.matchMedia("(max-width: 800px)").matches) {
-            return;
-        }
 
         $('.form-list').removeClass('active').addClass('inactive');
         $('.form-list').find('.arrow-icon').remove();
@@ -120,6 +116,7 @@ function positionPopupRelativeToFormList($formListItem, $popup) {
     var leftPosition = offset.left + 100;
 
     $popup.css({
+        // top: offset.top,
         left: leftPosition,
         top: 0
     });
