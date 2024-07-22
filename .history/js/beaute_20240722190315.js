@@ -24,8 +24,8 @@ $(document).ready(function() {
     
                 $('#form-list-2').not(this).removeClass('active').css('background-color', ''); 
                 $(this).toggleClass('active');
-                $('#form-list-2').css('background-color', $(this).hasClass('active') ? '#010114' : '');
-                $('#form-list-2').css('color', $(this).hasClass('active') ? '#FFFFFF' : '');
+                $('.form-list-2').css('background-color', $(this).hasClass('active') ? '#010114' : '');
+                $('.form-list-2').css('color', $(this).hasClass('active') ? '#FFFFFF' : '');
                 $(this).find('.arrow-icon').remove(); 
                 $(this).append($(this).hasClass('active') ? arrowIconUp : arrowIconDown); 
                 $(this).find('.submenu-popup').toggle();
